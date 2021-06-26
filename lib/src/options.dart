@@ -5,15 +5,18 @@ part of fingerprintjs;
 @JS()
 @anonymous
 class FontOptions {
-  external String  get swfContainerId;
-  external String  get swfPath;
-  external List<String >  get userDefinedFonts;
-  external bool  get extendedJsFonts;
+  external String get swfContainerId;
+
+  external String get swfPath;
+
+  external List<String> get userDefinedFonts;
+
+  external bool get extendedJsFonts;
 
   external factory FontOptions({
     String? swfContainerId,
     String? swfPath,
-    List<String >? userDefinedFonts,
+    List<String>? userDefinedFonts,
     bool? extendedJsFonts,
   });
 }
@@ -21,7 +24,7 @@ class FontOptions {
 @JS()
 @anonymous
 class ScreenOptions {
-  external bool  get detectScreenOrientation;
+  external bool get detectScreenOrientation;
 
   external factory ScreenOptions({bool? detectScreenOrientation});
 }
@@ -29,8 +32,9 @@ class ScreenOptions {
 @JS()
 @anonymous
 class AudioOptions {
-  external num  get timeout;
-  external bool  get excludeIOS11;
+  external num get timeout;
+
+  external bool get excludeIOS11;
 
   external factory AudioOptions({num? timeout, bool? excludeIOS11});
 }
@@ -38,8 +42,9 @@ class AudioOptions {
 @JS()
 @anonymous
 class PluginOptions {
-  external List  get sortPluginsFor;
-  external bool  get excludeIE;
+  external List get sortPluginsFor;
+
+  external bool get excludeIE;
 
   external factory PluginOptions({List? sortPluginsFor, bool? excludeIE});
 }
@@ -47,12 +52,17 @@ class PluginOptions {
 @JS()
 @anonymous
 class Options {
-  external Function  get preprocessor;
-  external AudioOptions  get audio;
-  external FontOptions  get fonts;
-  external ScreenOptions  get screen;
-  external PluginOptions  get plugin;
-  external List  get extraComponents;
+  external Function get preprocessor;
+
+  external AudioOptions get audio;
+
+  external FontOptions get fonts;
+
+  external ScreenOptions get screen;
+
+  external PluginOptions get plugin;
+
+  external List get extraComponents;
 
   external factory Options({
     Function? preprocessor,
